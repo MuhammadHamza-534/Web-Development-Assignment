@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Student Webpage</title>
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #ffffff; }
+
+    header { background: linear-gradient(90deg, #4b6cb7, #73e0ee); color: white; padding: 20px; text-align: center; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    header h1 { margin: 0; font-size: 42px; letter-spacing: 1px; padding-top: 13px;}
+    header p { font-size: 18px; margin-top: 5px; padding-bottom: 5px;}
+
+    .header-icons { margin-top: 10px; display: flex; gap: 15px; }
+    .header-icons i { font-size: 28px; color: #ffd700; }
+
+    nav { width: 100%; background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); display: flex; justify-content: center; align-items: center; padding: 15px 0; box-sizing: border-box; margin-top: 0; }
+    nav a { text-decoration: none; margin: 0 15px; color: #ffffff; font-weight: bold; padding: 10px 20px; border-radius: 6px; transition: 0.3s; }
+    nav a:hover { background: #56ccf2; color: #000; }
+
+    .section { padding: 40px 20px; text-align: center; margin: 40px auto; width: 90%; max-width: 1100px; background: inherit; border-radius: 25px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+
+    #intro { background: #a1d6e2; color: #023e8a; }
+    #skills { background: #fcd5ce; color: #6a040f; }
+    #projects { background: #ffe5b4; color: #794c00; }
+    #timeline { background: #d0f4de; color: #1b4332; }
+
+    .section h2 { margin-bottom: 20px; font-size: 32px; }
+
+    .section p { max-width: 700px; margin: auto; line-height: 1.6; font-size: 18px; }
+
+    .box-container { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+    .box { width: 300px; background: white; padding: 30px; border-radius: 20px; border: 2px solid #cde5ff; box-shadow: 0 6px 12px rgba(0,0,0,0.08); transition: 0.35s; }
+    .box:hover { transform: translateY(-6px); background: #eef7ff; }
+    .box h3 { margin-bottom: 10px; font-size: 24px; }
+
+    .box img { width: 120px; height: auto; border-radius: 10px; margin-top: 10px; cursor: pointer; }
+
+        /* Container layout */
+    .skills-section {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Skill boxes */
+    .skill-box {
+      background: #ffffff; padding: 14px 10px; text-align: center; border-radius: 10px; border: 1px solid #e2e2e2; 
+      font-size: 14px; font-weight: 600; box-sizing: border-box;
+    }
+
+    /* Prevent overflow */
+    body, html {
+      margin: 0; padding: 0; overflow-x: hidden;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 480px) {
+      .skills-section {
+        grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 8px;
+      }
+
+      .skill-box {
+        padding: 12px 8px; font-size: 13px;
+      }
+    }
+
+    footer { margin-top: 40px; padding: 25px; background: #343a40; color: white; text-align: center; font-size: 14px; }
+    footer p { margin: 5px 0; }
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Web Development Student Page</h1>
+    <p>Creative design using only simple HTML and CSS</p>
+    <div class="header-icons">
+      <i class="fas fa-code"></i>
+      <i class="fas fa-laptop-code"></i>
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-python"></i>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#timeline">My Learning Journey</a>
+  </nav>
+
+  <section class="section" id="intro">
+    <h2>Introduction</h2>
+    <p>My name is Muhammad Hamza Irfan. I started learning basic computer skills in 2023 and gradually moved to web development. I enjoy creating clean and simple webpages using basic HTML and CSS. This project demonstrates my beginner-level design skills and creativity in structuring layouts and styling elements.</p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>My Skills</h2>
+    <div class="box-container">
+      <div class="box">
+        <h3>Video Editing</h3>
+        <p>Simple editing, trimming, adding text, transitions, and optimizing videos for YouTube and social media.</p>
+      </div>
+      <div class="box">
+        <h3>HTML Basics</h3>
+        <p>Web page structure, tags, attributes, headings, paragraphs, lists, links, images, tables, forms, and divisions.</p>
+      </div>
+
+      <div class="box">
+        <h3>CSS Styling</h3>
+        <p>Colors, backgrounds, buttons, hover effects, Flexbox, borders, padding, margin, simple responsive design, box shadow, and rounded corners.</p>
+      </div>
+
+      <div class="box">
+        <h3>UI & Design</h3>
+        <p>Basic UI layout, color matching, simple shapes, clean structure, Canva designing, image optimization.</p>
+      </div>
+
+      <div class="box">
+        <h3>Software Tools</h3>
+        <p>MS Office, Adobe Photoshop (basic), Adobe XD (UI design), VS Code, file handling and folder structuring.</p>
+      </div>
+
+      <div class="box">
+        <h3>Programming Basics</h3>
+        <p>Python (basic level), jQuery (intro level).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>My Sample Projects</h2>
+    <div class="box-container">
+      <div class="box">
+        <h3>My YouTube Channel</h3>
+        <a href="https://www.youtube.com/@RhymioKids" target="_blank">
+          <img src="Channel logo.png" alt="YouTube Channel Logo">
+        </a>
+      </div>
+      <div class="box">
+        <h3>About Me Page</h3>
+        <a href="About Me.html"><img src="Profile Pic.png" alt=""></a>
+      </div>
+      <div class="box">
+        <h3>My Amazon Coloring Books</h3>
+        <a href="https://www.amazon.com/dp/B0G3KXWZCC" target="_blank">
+          <img src="Amazon KDP.png" alt="Amazon KDP Logo" style="width:110px; height:auto; margin-top:10px;">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="timeline">
+    <h2>My Learning Journey</h2>
+    <div class="box-container">
+      <div class="box">
+        <h3>2023</h3>
+        <p>I learned basic computer skills and familiarized myself with fundamental operations.</p>
+      </div>
+      <div class="box">
+        <h3>2024</h3>
+        <p>I completed a CIT course where I learned MS Office, Adobe Photoshop, Adobe XD, basic HTML & CSS, basic Python, and introductory jQuery.</p>
+      </div>
+      <div class="box">
+        <h3>2025</h3>
+        <p>I am currently doing a Web Development course and building my skills to create full webpages.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Muhammad Hamza Irfan</strong></p>
+    <p>Email: humzairfan534@gmail.com | Phone: 03433276051</p>
+    <p>Location: Karachi, Pakistan</p>
+    <p>© 2025 Student Web Development Project</p>
+  </footer>
+
+</body>
+</html>
